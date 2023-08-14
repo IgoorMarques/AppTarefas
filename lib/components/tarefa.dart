@@ -64,7 +64,7 @@ class _TaskState extends State<Task> {
                     ),
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: 200,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -126,12 +126,12 @@ class _TaskState extends State<Task> {
                   onPressed: () {
                     upLvl();
                   },
-                  child: Container(
+                  child: const SizedBox(
                     height: 50,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        const Icon(Icons.arrow_drop_up),
+                        Icon(Icons.arrow_drop_up),
                         Text("UP")
                       ],
                     ),
